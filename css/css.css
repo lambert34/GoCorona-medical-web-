@@ -38,7 +38,9 @@ body {
 }
 
 body {
-
+font-family: Rubik;
+font-size: 12px;
+color: #616161;
 }
 
 .wrapper {
