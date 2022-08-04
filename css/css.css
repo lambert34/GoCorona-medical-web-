@@ -130,6 +130,7 @@ justify-content: flex-end;
 
 .menu__list {
 display: flex;
+background-color: #FAFBFD;
 }
 
 .menu__item {
@@ -330,20 +331,41 @@ line-height: 138.5%;
 
 }
 
+@media (max-width: 767.98px) {
+    .block-text__title {
+        font-size: 34px;
+    }
+}
+
+/* =================================== */
+
 .get-started {
 background-color: #FAFBFD;
-padding: 150px 0px 50px 0px;
 }
 
 .get-started__container {
+padding: 150px 15px 50px 15px;
 display: flex;
 flex-wrap: wrap;
 align-items: center; 
+position: relative;
 }
+.get-started__container::before {
+    content: "";
+    position: absolute;
+    width: 100vw; 
+    height: 100%;
+    right: 267px;
+    top: 0;
+    background-color: #EC5863;
+    border-radius: 30px 0px 0px 30px;
+    transform: translate(100%, 0px);
+}
+/* Уточнил, что значение width будет растягивать декор на всю ширину вью-порта */
 
 .get-started__content {
 flex: 0 1 48%;
-padding: 0px 0px 0px 20px;
+padding: 0px 20px;
 }
 .get-started__block-text {
 max-width: 410px;
@@ -356,6 +378,8 @@ max-width: 410px;
 
 .get-started__image {
     flex: 0 1 52%;
+    position: relative;
+    z-index: 2;
 }
 
 .get-started__image img {
@@ -393,3 +417,35 @@ margin: 0px 0px 5px 0px;
     color: #000;
 }
 
+
+@media (max-width: 991.98px) {
+    .get-started__container::before {
+    right: 185px;
+    border-radius: 20px 0px 0px 20px;
+
+    }
+}
+
+@media (max-width: 767.98px) {
+    .get-started__container {
+    padding: 100px 15px 30px 15px;
+    }
+    .get-started__container::before {
+        display: none;
+    }
+    .get-started__block-text {
+        max-width: none;
+    }
+    .get-started__content {
+        flex: 1 1 100%;
+        padding: 0;
+}
+    .get-started__image {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .get-started__video {
+        padding: 0;
+    }
+}
