@@ -816,3 +816,32 @@ transform: rotate(-30deg);
             border-radius: 16px;
             transform: rotate(45deg);
             }
+
+            /* ===================== */
+
+            .footer {
+                padding: 45px 0;
+            }
+
+            .footer__container {
+               
+            }
+            .footer__items {
+                display: flex;
+                column-gap: 50px;
+                row-gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer__item {
+                flex-direction: column;
+            }
+
+            @media (max-width: 500px) {
+                .footer {
+                    padding: 30px 0;
+                }
+                .footer__items {
+                    flex-direction: column;
+                }
+            }
