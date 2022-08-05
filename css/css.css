@@ -557,12 +557,18 @@ margin: 0px 0px 5px 0px;
 
 .experts {
     background-color: #FAFBFD;
-    padding: 103px 0px 115px 0px;
+    padding: 103px 0px 116px 0px;
 }
 .experts__container {
 }
 .experts__statistics {
+    margin: 0px 0px 80px 0px;
 }
+
+.experts__block-text {
+    max-width: 400px;
+}
+
 .statistics-experts {
     max-width: 655px;
     margin: 0px auto;
@@ -574,6 +580,7 @@ margin: 0px 0px 5px 0px;
     background-color: #fff;
     box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
     border-radius: 16px;
+    margin: 0px 0px 80px 0px;
 }
 
 .statistics-experts__decor {
@@ -605,7 +612,7 @@ margin: 0px 0px 5px 0px;
 }
 
 .body-statistics-experts {
-    padding: 20px 80px;
+    padding: 25px 80px;
     display: flex;
     align-items: center;
 }
